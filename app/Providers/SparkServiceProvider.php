@@ -62,5 +62,8 @@ class SparkServiceProvider extends ServiceProvider
             ->features([
                 'First', 'Second', 'Third'
             ]);
+
+        // set two factor auth
+        Spark::useTwoFactorAuth();
     }
 }
